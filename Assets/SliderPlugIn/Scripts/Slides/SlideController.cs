@@ -226,4 +226,9 @@ public class SlideController : MonoBehaviour
         }
 
     }
+
+    public Slide GetSlide(int slideIndex)
+    {
+        return _slides[slideIndex];
+    }
 }
