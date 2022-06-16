@@ -2360,6 +2360,7 @@ GameObject:
   - component: {fileID: 160162221}
   - component: {fileID: 160162220}
   - component: {fileID: 160162219}
+  - component: {fileID: 160162222}
   m_Layer: 5
   m_Name: 4 - Satellite1:1
   m_TagString: Untagged
@@ -2382,6 +2383,7 @@ RectTransform:
   - {fileID: 1486106609}
   - {fileID: 646188764}
   - {fileID: 1399673361}
+  - {fileID: 788952448}
   - {fileID: 1313266445}
   m_Father: {fileID: 224017967411269218}
   m_RootOrder: 5
@@ -2465,6 +2467,19 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &160162222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 160162217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 136a7c42f14d8c34eb0b46df39607f42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _objectToReset: {fileID: 1763010689}
 --- !u!1 &161012041
 GameObject:
   m_ObjectHideFlags: 0
@@ -13954,6 +13969,54 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &788952447
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 788952448}
+  - component: {fileID: 788952449}
+  m_Layer: 5
+  m_Name: '[ChangeTransform]'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &788952448
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 788952447}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 160162218}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &788952449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 788952447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8abcd29b0cacb084f907441c5aff2e70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _objectToMove: {fileID: 1763010689}
+  _PosVertical: {x: 0, y: -115.9091, z: -526.8181}
+  _RotVertical: {x: 0, y: 0, z: 0}
+  _PosHorizontal: {x: 0, y: -115.9091, z: -526.8181}
+  _RotHorizontal: {x: 0, y: 0, z: 90}
 --- !u!1 &789161062
 GameObject:
   m_ObjectHideFlags: 0
@@ -22717,7 +22780,7 @@ Transform:
   - {fileID: 941413515}
   - {fileID: 1763010690}
   m_Father: {fileID: 160162218}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1318778156
 GameObject:
@@ -25138,6 +25201,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 788952449}
+        m_TargetAssemblyTypeName: ChangeObjectTransform, Assembly-CSharp
+        m_MethodName: Vertical
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   movingButtonIconText: {fileID: 2110263159}
   compressableButtonVisuals: {fileID: 1318778156}
   minCompressPercentage: 0.25
@@ -26894,6 +26969,18 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 8300000, guid: 40ae713ddf420714bbc1a3b5c3f2eac1, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 788952449}
+        m_TargetAssemblyTypeName: ChangeObjectTransform, Assembly-CSharp
+        m_MethodName: Horizontal
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -35012,7 +35099,7 @@ GameObject:
   - component: {fileID: 1763010692}
   - component: {fileID: 1763010691}
   m_Layer: 0
-  m_Name: Capsule
+  m_Name: 3D_Satellite1:1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35025,8 +35112,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1763010689}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -115.90909, z: -526.8181}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -115.90909, z: -526.818}
   m_LocalScale: {x: 409.0908, y: 409.0908, z: 409.0908}
   m_Children: []
   m_Father: {fileID: 1313266445}
