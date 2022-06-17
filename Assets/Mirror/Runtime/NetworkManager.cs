@@ -219,6 +219,11 @@ namespace Mirror
             UpdateScene();
         }
 
+        public void SetAdresse(string adrr)
+        {
+            networkAddress = adrr; 
+        }
+
         // keep the online scene change check in a separate function
         bool IsServerOnlineSceneChangeNeeded()
         {
