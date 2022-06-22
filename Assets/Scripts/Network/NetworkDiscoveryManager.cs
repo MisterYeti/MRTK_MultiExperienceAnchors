@@ -20,8 +20,6 @@ public class NetworkDiscoveryManager : MonoBehaviour
     {
         DiscoverNetwork = DiscoverNetworkCoroutine();
         StartCoroutine(DiscoverNetwork);
-
-        UnityEditor.Events.UnityEventTools.AddPersistentListener(networkDiscovery.OnServerFound, OnDiscoveredServer);
     }
 
     public void StartHost()
