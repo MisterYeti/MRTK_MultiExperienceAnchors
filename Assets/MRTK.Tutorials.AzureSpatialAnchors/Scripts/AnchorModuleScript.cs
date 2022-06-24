@@ -35,11 +35,12 @@ public class AnchorModuleScript : NetworkBehaviour
     public void SetNewAnchorId(string oldId, string newId)
     {
         Debug.Log("New Id : " + newId);
+        FindAzureAnchor();
     }
 
     [Command(requiresAuthority = false)]
     public void CmdSetIntFromAdmin(string newId)
-    {
+    { 
         currentAzureAnchorID = newId;
     }
 
