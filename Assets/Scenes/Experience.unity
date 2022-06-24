@@ -3206,7 +3206,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   networkDiscovery: {fileID: 1559052528}
-  delayDiscover: 1
+  delayDiscover: 3
   buttonHost: {fileID: 1566495066}
   buttonClient: {fileID: 1514645114}
 --- !u!1 &192301950
@@ -48156,7 +48156,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 673047344170224407}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -48286,7 +48286,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   handType: 3
   proximityType: 3
-  executionOrder: 0
+  executionOrder: 1
   constraintOnRotation: 5
   useLocalSpaceForConstraint: 0
 --- !u!114 &673047344170224411
