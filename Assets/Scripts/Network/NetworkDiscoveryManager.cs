@@ -31,8 +31,9 @@ public class NetworkDiscoveryManager : MonoBehaviour
         networkDiscovery.AdvertiseServer();
         StopCoroutine(DiscoverNetwork);
         buttonHost.SetStatus(false);
-        StartCoroutine(StartAzureCoroutine(true));
-        
+        //StartCoroutine(StartAzureCoroutine(true));
+        ActivateAnchorsButton();
+
     }
 
     private IEnumerator StartAzureCoroutine(bool activateButtons)
