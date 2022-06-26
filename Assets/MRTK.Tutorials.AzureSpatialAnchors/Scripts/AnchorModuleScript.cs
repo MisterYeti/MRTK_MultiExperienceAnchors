@@ -32,38 +32,16 @@ public class AnchorModuleScript : NetworkBehaviour
 
     private readonly Queue<Action> dispatchQueue = new Queue<Action>();
 
-    [SerializeField] ButtonStatusController buttonSaveAnchors;
-
-
-
-    #region DGA
     public void SetNewAnchorId(string oldId, string newId)
     {
-        Debug.Log("Loaded new ID from Network : " + newId);
-        FindAzureAnchor();
+        Debug.Log("New Id : " + newId);
     }
 
     [Command(requiresAuthority = false)]
     public void CmdSetIntFromAdmin(string newId)
     {
-        Debug.Log("Setting new ID for Network : " + newId);
         currentAzureAnchorID = newId;
     }
-
-
-    public void SaveAnchors(GameObject anchorObject)
-    {
-        CreateAzureAnchor(anchorObject);       
-    }
-
-
-    public void LoadAnchors()
-    {
-        //GetAzureAnchorIdFromDisk();
-        FindAzureAnchor();
-    }
-
-    #endregion
 
     #region Unity Lifecycle
     void Start()
@@ -104,7 +82,6 @@ public class AnchorModuleScript : NetworkBehaviour
     #endregion
 
     #region Public Methods
-
     public async void StartAzureSession()
     {
         Debug.Log("\nAnchorModuleScript.StartAzureSession()");
@@ -147,7 +124,6 @@ public class AnchorModuleScript : NetworkBehaviour
     public async void CreateAzureAnchor(GameObject theObject)
     {
         Debug.Log("\nAnchorModuleScript.CreateAzureAnchor()");
-        buttonSaveAnchors.SetStatus(false);
         removeAnchor = "Active";
 
         // Notify AnchorFeedbackScript
@@ -179,7 +155,7 @@ public class AnchorModuleScript : NetworkBehaviour
         }
 
         // In this sample app we delete the cloud anchor explicitly, but here we show how to set an anchor to expire automatically
-        localCloudAnchor.Expiration = DateTimeOffset.Now.AddDays(7);
+        //localCloudAnchor.Expiration = DateTimeOffset.Now.AddDays(7);
 
         // Save anchor to cloud
         while (!cloudManager.IsReadyForCreate)
@@ -215,11 +191,6 @@ public class AnchorModuleScript : NetworkBehaviour
                 // Update the current Azure anchor ID
                 Debug.Log($"Current Azure anchor ID updated to '{currentCloudAnchor.Identifier}'");
                 currentAzureAnchorID = currentCloudAnchor.Identifier;
-
-
-                SaveAzureAnchorIdToDisk();
-                ShareAzureAnchorIdToNetwork();
-                buttonSaveAnchors.SetStatus(true);
             }
             else
             {
@@ -361,12 +332,14 @@ public class AnchorModuleScript : NetworkBehaviour
     {
         Debug.Log("\nAnchorModuleScript.ShareAzureAnchorID()");
         CmdSetIntFromAdmin(currentAzureAnchorID);
+        //StartCoroutine(ShareAzureAnchorIdToNetworkCoroutine());
     }
 
     public void GetAzureAnchorIdFromNetwork()
     {
         Debug.Log("\nAnchorModuleScript.GetSharedAzureAnchorID()");
         Debug.Log("Currend id : " + currentAzureAnchorID);
+        //StartCoroutine(GetSharedAzureAnchorIDCoroutine(publicSharingPin));
     }
     #endregion
 
