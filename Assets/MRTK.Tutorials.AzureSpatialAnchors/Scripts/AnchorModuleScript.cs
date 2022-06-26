@@ -32,17 +32,39 @@ public class AnchorModuleScript : NetworkBehaviour
 
     private readonly Queue<Action> dispatchQueue = new Queue<Action>();
 
+    [SerializeField] ButtonStatusController buttonSaveAnchors;
+
+
+
+    #region DGA
     public void SetNewAnchorId(string oldId, string newId)
     {
-        Debug.Log("New Id : " + newId);
+        Debug.Log("Loaded new ID from Network : " + newId);
         FindAzureAnchor();
     }
 
     [Command(requiresAuthority = false)]
     public void CmdSetIntFromAdmin(string newId)
-    { 
+    {
+        Debug.Log("Setting new ID for Network : " + newId);
         currentAzureAnchorID = newId;
     }
+
+
+    public async void SaveAnchors(GameObject anchorObject)
+    {
+        buttonSaveAnchors.SetStatus(false);
+        await CreateAzureAnchor(anchorObject);       
+    }
+
+
+    public void LoadAnchors()
+    {
+        //GetAzureAnchorIdFromDisk();
+        FindAzureAnchor();
+    }
+
+    #endregion
 
     #region Unity Lifecycle
     void Start()
@@ -83,6 +105,7 @@ public class AnchorModuleScript : NetworkBehaviour
     #endregion
 
     #region Public Methods
+
     public async void StartAzureSession()
     {
         Debug.Log("\nAnchorModuleScript.StartAzureSession()");
@@ -122,7 +145,7 @@ public class AnchorModuleScript : NetworkBehaviour
         Debug.Log("Azure session stopped successfully");
     }
 
-    public async void CreateAzureAnchor(GameObject theObject)
+    public async Task CreateAzureAnchor(GameObject theObject)
     {
         Debug.Log("\nAnchorModuleScript.CreateAzureAnchor()");
         removeAnchor = "Active";
@@ -192,6 +215,11 @@ public class AnchorModuleScript : NetworkBehaviour
                 // Update the current Azure anchor ID
                 Debug.Log($"Current Azure anchor ID updated to '{currentCloudAnchor.Identifier}'");
                 currentAzureAnchorID = currentCloudAnchor.Identifier;
+
+
+                SaveAzureAnchorIdToDisk();
+                ShareAzureAnchorIdToNetwork();
+                buttonSaveAnchors.SetStatus(true);
             }
             else
             {
@@ -333,14 +361,12 @@ public class AnchorModuleScript : NetworkBehaviour
     {
         Debug.Log("\nAnchorModuleScript.ShareAzureAnchorID()");
         CmdSetIntFromAdmin(currentAzureAnchorID);
-        //StartCoroutine(ShareAzureAnchorIdToNetworkCoroutine());
     }
 
     public void GetAzureAnchorIdFromNetwork()
     {
         Debug.Log("\nAnchorModuleScript.GetSharedAzureAnchorID()");
         Debug.Log("Currend id : " + currentAzureAnchorID);
-        //StartCoroutine(GetSharedAzureAnchorIDCoroutine(publicSharingPin));
     }
     #endregion
 
