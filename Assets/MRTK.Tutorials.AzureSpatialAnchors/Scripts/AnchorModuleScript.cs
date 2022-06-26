@@ -51,10 +51,9 @@ public class AnchorModuleScript : NetworkBehaviour
     }
 
 
-    public async void SaveAnchors(GameObject anchorObject)
+    public void SaveAnchors(GameObject anchorObject)
     {
-        buttonSaveAnchors.SetStatus(false);
-        await CreateAzureAnchor(anchorObject);       
+        CreateAzureAnchor(anchorObject);       
     }
 
 
@@ -145,9 +144,10 @@ public class AnchorModuleScript : NetworkBehaviour
         Debug.Log("Azure session stopped successfully");
     }
 
-    public async Task CreateAzureAnchor(GameObject theObject)
+    public async void CreateAzureAnchor(GameObject theObject)
     {
         Debug.Log("\nAnchorModuleScript.CreateAzureAnchor()");
+        buttonSaveAnchors.SetStatus(false);
         removeAnchor = "Active";
 
         // Notify AnchorFeedbackScript

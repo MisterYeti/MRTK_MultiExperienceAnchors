@@ -56035,7 +56035,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 5735529180589502188}
         m_TargetAssemblyTypeName: AnchorModuleScript, Assembly-CSharp
-        m_MethodName: SaveAnchors
+        m_MethodName: CreateAzureAnchor
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 673047344170224407}
