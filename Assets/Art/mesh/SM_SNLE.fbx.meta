@@ -1,0 +1,138 @@
+fileFormatVersion: 2
+guid: 600780846c04db948870e061f46676e6
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Trap
+    100004: Sous_MarinInterieur
+    100006: SubMarin1
+    100008: Object001
+    100010: M51
+    100012: MISSILES
+    400000: //RootNode
+    400002: Trap
+    400004: Sous_MarinInterieur
+    400006: SubMarin1
+    400008: Object001
+    400010: M51
+    400012: MISSILES
+    2100000: Submarin
+    2100002: Submarin_Inside
+    2100004: Submarin_Trappe
+    2100006: Submarin2
+    2100008: Submarin1
+    2100010: Submarin_Inside1
+    2100012: Submarin3
+    2100014: Submarin4
+    2100016: Submarin_Inside2
+    2100018: pasted__Submarin_Inside2
+    2100020: Tubes
+    2100022: M_M51
+    2300000: //RootNode
+    2300002: Trap
+    2300004: Sous_MarinInterieur
+    2300006: SubMarin1
+    2300008: Object001
+    2300010: M51
+    2300012: MISSILES
+    3300000: //RootNode
+    3300002: Trap
+    3300004: Sous_MarinInterieur
+    3300006: SubMarin1
+    3300008: Object001
+    3300010: M51
+    3300012: MISSILES
+    4300000: SubMarin1
+    4300002: Trap
+    4300004: Sous_MarinInterieur
+    4300006: Object001
+    4300008: Object002
+    4300010: M51
+    4300012: MISSILES
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

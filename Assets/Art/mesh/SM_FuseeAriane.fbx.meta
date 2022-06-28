@@ -1,0 +1,191 @@
+fileFormatVersion: 2
+guid: 33070316578c4d34f90de60311fa409d
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Arm_L
+    100002: Arm_R
+    100004: Arms
+    100006: ArmsRoot
+    100008: Attaches
+    100010: Attaches_Center
+    100012: Attaches_L
+    100014: Attaches_R
+    100016: Attaches_Root
+    100018: Fairing_L
+    100020: Fairing_R
+    100022: Fusee_body
+    100024: Fusee_Root
+    100026: FX_L
+    100028: FX_R
+    100030: Jet_L
+    100032: Jet_R
+    100034: Platform
+    100036: Platform_Mesh
+    100038: Platform_Root
+    100040: Rails
+    100042: RootSatallite
+    100044: Satallite
+    100046: Satallite_jet
+    100048: //RootNode
+    100050: Tete
+    400000: Arm_L
+    400002: Arm_R
+    400004: Arms
+    400006: ArmsRoot
+    400008: Attaches
+    400010: Attaches_Center
+    400012: Attaches_L
+    400014: Attaches_R
+    400016: Attaches_Root
+    400018: Fairing_L
+    400020: Fairing_R
+    400022: Fusee_body
+    400024: Fusee_Root
+    400026: FX_L
+    400028: FX_R
+    400030: Jet_L
+    400032: Jet_R
+    400034: Platform
+    400036: Platform_Mesh
+    400038: Platform_Root
+    400040: Rails
+    400042: RootSatallite
+    400044: Satallite
+    400046: Satallite_jet
+    400048: //RootNode
+    400050: Tete
+    2100000: M_Ariane
+    2300000: Arm_L
+    2300002: Arm_R
+    2300004: Attaches_Center
+    2300006: Attaches_L
+    2300008: Attaches_R
+    2300010: Fairing_L
+    2300012: Fairing_R
+    2300014: Fusee_body
+    2300016: Jet_L
+    2300018: Jet_R
+    2300020: Platform_Mesh
+    2300022: Rails
+    2300024: Satallite
+    2300026: Satallite_jet
+    3300000: Arm_L
+    3300002: Arm_R
+    3300004: Attaches_Center
+    3300006: Attaches_L
+    3300008: Attaches_R
+    3300010: Fairing_L
+    3300012: Fairing_R
+    3300014: Fusee_body
+    3300016: Jet_L
+    3300018: Jet_R
+    3300020: Platform_Mesh
+    3300022: Rails
+    3300024: Satallite
+    3300026: Satallite_jet
+    4300000: Platform_Mesh
+    4300002: Arm_R
+    4300004: Arm_L
+    4300006: Rails
+    4300008: Fusee_body
+    4300010: Fairing_L
+    4300012: Fairing_R
+    4300014: Satallite
+    4300016: Satallite_jet
+    4300018: Attaches_R
+    4300020: Attaches_L
+    4300022: Attaches_Center
+    4300024: Jet_L
+    4300026: Jet_R
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Ariane
+    second: {fileID: 2100000, guid: 449bd9c59d0f7d54fb1fcb72e7221120, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
