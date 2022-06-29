@@ -4882,7 +4882,6 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: d8c9fdb425a777443ad16026cebab364, type: 2}
-  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9780,7 +9779,6 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: d8c9fdb425a777443ad16026cebab364, type: 2}
-  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -30101,7 +30099,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &6914781773454334845
 Transform:
   m_ObjectHideFlags: 0
@@ -34855,7 +34853,6 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 50ff964d5c396304a88fe977760b435e, type: 2}
-  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -34916,7 +34913,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &9186198126894400399
 Transform:
   m_ObjectHideFlags: 0
@@ -35318,7 +35315,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 12.05
+      scalar: 12.5
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -35810,7 +35807,7 @@ ParticleSystem:
     serializedVersion: 6
     enabled: 1
     type: 4
-    angle: 4.367289
+    angle: 2.1
     length: 5
     boxThickness: {x: 0, y: 0, z: 0}
     radiusThickness: 1
@@ -39921,7 +39918,6 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: b7dbb77b4d4f6a44eb2bd97440550b42, type: 2}
-  - {fileID: 2100000, guid: d8c9fdb425a777443ad16026cebab364, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -40173,7 +40169,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3109766747593647118
 Transform:
   m_ObjectHideFlags: 0
@@ -45108,7 +45104,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3849182248239579172
 Transform:
   m_ObjectHideFlags: 0
@@ -50254,7 +50250,6 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: d8c9fdb425a777443ad16026cebab364, type: 2}
-  - {fileID: 2100000, guid: d8c9fdb425a777443ad16026cebab364, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -50575,7 +50570,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 12.05
+      scalar: 12.5
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -51067,7 +51062,7 @@ ParticleSystem:
     serializedVersion: 6
     enabled: 1
     type: 4
-    angle: 4.367289
+    angle: 2.1
     length: 5
     boxThickness: {x: 0, y: 0, z: 0}
     radiusThickness: 1
@@ -55178,7 +55173,6 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: b7dbb77b4d4f6a44eb2bd97440550b42, type: 2}
-  - {fileID: 2100000, guid: d8c9fdb425a777443ad16026cebab364, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -59998,7 +59992,6 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: d8c9fdb425a777443ad16026cebab364, type: 2}
-  - {fileID: 2100000, guid: d8c9fdb425a777443ad16026cebab364, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -60581,7 +60574,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 12.05
+      scalar: 12.5
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -61073,7 +61066,7 @@ ParticleSystem:
     serializedVersion: 6
     enabled: 1
     type: 4
-    angle: 4.367289
+    angle: 2.1
     length: 5
     boxThickness: {x: 0, y: 0, z: 0}
     radiusThickness: 1
@@ -65184,7 +65177,6 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: b7dbb77b4d4f6a44eb2bd97440550b42, type: 2}
-  - {fileID: 2100000, guid: d8c9fdb425a777443ad16026cebab364, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
