@@ -30,17 +30,32 @@ public class AnchorModuleScript : NetworkBehaviour
     private AnchorLocateCriteria anchorLocateCriteria;
     private CloudSpatialAnchorWatcher currentWatcher;
 
+    [SerializeField] ButtonStatusController buttonSave;
+
     private readonly Queue<Action> dispatchQueue = new Queue<Action>();
 
     public void SetNewAnchorId(string oldId, string newId)
     {
-        Debug.Log("New Id : " + newId);
+        Debug.Log("Set new ID from network : " + newId);
+        FindAzureAnchor();
     }
 
     [Command(requiresAuthority = false)]
     public void CmdSetIntFromAdmin(string newId)
     {
         currentAzureAnchorID = newId;
+    }
+
+    public void SaveAnchors(GameObject theObject)
+    {
+        buttonSave.SetStatus(false);
+        CreateAzureAnchor(theObject);
+    }
+
+    public void LoadAnchors()
+    {
+        GetAzureAnchorIdFromDisk();
+        FindAzureAnchor();
     }
 
     #region Unity Lifecycle
@@ -191,6 +206,9 @@ public class AnchorModuleScript : NetworkBehaviour
                 // Update the current Azure anchor ID
                 Debug.Log($"Current Azure anchor ID updated to '{currentCloudAnchor.Identifier}'");
                 currentAzureAnchorID = currentCloudAnchor.Identifier;
+                SaveAzureAnchorIdToDisk();
+                ShareAzureAnchorIdToNetwork();
+                buttonSave.SetStatus(true);
             }
             else
             {
@@ -263,6 +281,7 @@ public class AnchorModuleScript : NetworkBehaviour
 
         anchorLocateCriteria.Identifiers = anchorsToFind.ToArray();
         Debug.Log($"Anchor locate criteria configured to look for Azure anchor with ID '{currentAzureAnchorID}'");
+        anchorLocateCriteria.BypassCache = true;
 
         // Start watching for Anchors
         if ((cloudManager != null) && (cloudManager.Session != null))
@@ -332,14 +351,12 @@ public class AnchorModuleScript : NetworkBehaviour
     {
         Debug.Log("\nAnchorModuleScript.ShareAzureAnchorID()");
         CmdSetIntFromAdmin(currentAzureAnchorID);
-        //StartCoroutine(ShareAzureAnchorIdToNetworkCoroutine());
     }
 
     public void GetAzureAnchorIdFromNetwork()
     {
         Debug.Log("\nAnchorModuleScript.GetSharedAzureAnchorID()");
         Debug.Log("Currend id : " + currentAzureAnchorID);
-        //StartCoroutine(GetSharedAzureAnchorIDCoroutine(publicSharingPin));
     }
     #endregion
 
@@ -348,7 +365,7 @@ public class AnchorModuleScript : NetworkBehaviour
     {
         QueueOnUpdate(new Action(() => Debug.Log($"Anchor recognized as a possible Azure anchor")));
 
-        if (args.Status == LocateAnchorStatus.Located || args.Status == LocateAnchorStatus.AlreadyTracked)
+        if (args.Status == LocateAnchorStatus.Located)
         {
             currentCloudAnchor = args.Anchor;
 

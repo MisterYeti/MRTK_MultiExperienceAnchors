@@ -31,8 +31,7 @@ public class NetworkDiscoveryManager : MonoBehaviour
         networkDiscovery.AdvertiseServer();
         StopCoroutine(DiscoverNetwork);
         buttonHost.SetStatus(false);
-        //StartCoroutine(StartAzureCoroutine(true));
-        ActivateAnchorsButton();
+        StartCoroutine(StartAzureCoroutine(true));
 
     }
 
@@ -40,7 +39,7 @@ public class NetworkDiscoveryManager : MonoBehaviour
     {
         yield return new WaitForSeconds(2f);
         anchorModule.StartAzureSession();
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(4f);
         if (activateButtons)
         {
             ActivateAnchorsButton();
@@ -53,7 +52,6 @@ public class NetworkDiscoveryManager : MonoBehaviour
         StopCoroutine(DiscoverNetwork);
         buttonClient.SetStatus(false);
         StartCoroutine(StartAzureCoroutine(false));
-        //ActivateAnchorsButton();
     }
 
 
