@@ -111,7 +111,7 @@ Material:
     - _BumpScale: 1
     - _ColorSpace: 0
     - _CommonSection: 1
-    - _Contrast: 0.5
+    - _Contrast: 2.87
     - _Cull: 2
     - _CustomFogEndDistance: 45
     - _CustomFogStartDistance: 5
@@ -122,10 +122,10 @@ Material:
     - _Distortion: 0.3
     - _DstBlend: 0
     - _Exposure: 1
-    - _FresnalScale: 1
+    - _FresnalScale: 2.73
     - _FresnelLight: 0
     - _FresnelLightOperation: 1
-    - _FresnelPower: 1
+    - _FresnelPower: 4.14
     - _FresnelWidth: 0.7
     - _GlossMapScale: 1
     - _Glossiness: 0.5
@@ -211,19 +211,19 @@ Material:
     - __SLICEPLANE_ON: 0
     - __VERTEXDISPLACEMENT_ON: 0
     - __dirty: 0
-    - _emissive: 0
+    - _emissive: 1
     - _supportVFace: 0
     m_Colors:
     - _AmbientColor: {r: 0.2, g: 0.2, b: 0.25, a: 1}
-    - _BaseColor: {r: 0.9622642, g: 0.9622642, b: 0.9622642, a: 0}
+    - _BaseColor: {r: 0.4245283, g: 0.3055961, b: 0.15819687, a: 0}
     - _Color: {r: 0.8867924, g: 0.8867924, b: 0.8867924, a: 1}
     - _CustomFogColor: {r: 0, g: 0, b: 0, a: 1}
     - _Emission: {r: 0, g: 0, b: 0, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _FresnelColor: {r: 0.6, g: 0.6, b: 0.6, a: 1}
+    - _FresnelColor: {r: 0, g: 0, b: 0, a: 1}
     - _HighlightColor: {r: 1, g: 1, b: 1, a: 1}
     - _LambertLightDirection: {r: -1, g: -1, b: 1, a: 1}
     - _SlicePlaneEdgeColor: {r: 1, g: 1, b: 1, a: 0}
     - _VertexColorMultiplier: {r: 1, g: 1, b: 1, a: 1}
-    - _emisColor: {r: 1, g: 1, b: 1, a: 0}
+    - _emisColor: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []

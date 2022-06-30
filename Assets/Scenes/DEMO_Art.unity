@@ -3474,6 +3474,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 4_PR_LancementSatelliteANIM
       objectReference: {fileID: 0}
+    - target: {fileID: 4562276702449095597, guid: e48594a63c3b3cb42b77bb9c9f69d70a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8694554427391694682, guid: e48594a63c3b3cb42b77bb9c9f69d70a, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -15817,6 +15821,10 @@ PrefabInstance:
     - target: {fileID: 7946429863824239107, guid: ed35324421a9f9e4cbe4f56169dde4ea, type: 3}
       propertyPath: m_Name
       value: 3b_PR_DEMO_SatelliteAlone
+      objectReference: {fileID: 0}
+    - target: {fileID: 7946429863824239107, guid: ed35324421a9f9e4cbe4f56169dde4ea, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8951926259050541328, guid: ed35324421a9f9e4cbe4f56169dde4ea, type: 3}
       propertyPath: m_RootOrder
