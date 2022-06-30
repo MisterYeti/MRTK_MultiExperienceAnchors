@@ -19876,7 +19876,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 784e97d67cc70354b8932f9d07b6d822, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _sliderController: {fileID: 0}
+  _sliderController: {fileID: 9151075289340468436}
   _slideBackToMenu: {fileID: 463377641}
 --- !u!4 &1067155641
 Transform:
