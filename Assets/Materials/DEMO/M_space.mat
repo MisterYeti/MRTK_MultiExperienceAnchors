@@ -115,7 +115,7 @@ Material:
     - _NormalIntensity: 1
     - _NormalMapIntensity: 1
     - _NormalMode: 0
-    - _Opacity: 1
+    - _Opacity: 0.225
     - _Pause: 0
     - _PointLightsCount: 1
     - _Reflection: 2
@@ -167,7 +167,7 @@ Material:
     - __SLICEPLANE_ON: 0
     - __VERTEXDISPLACEMENT_ON: 0
     - __dirty: 0
-    - _emission: 0.54
+    - _emission: 1
     - _supportVFace: 0
     m_Colors:
     - _AmbientColor: {r: 0.2, g: 0.2, b: 0.25, a: 1}
