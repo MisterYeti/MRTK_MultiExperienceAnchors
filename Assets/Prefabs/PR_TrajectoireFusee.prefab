@@ -4362,13 +4362,14 @@ GameObject:
   m_Component:
   - component: {fileID: 420486714324414800}
   - component: {fileID: 4614560362467869500}
+  - component: {fileID: 1234953363}
   m_Layer: 0
   m_Name: PR_TrajectoireFusee
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &420486714324414800
 Transform:
   m_ObjectHideFlags: 0
@@ -4378,7 +4379,7 @@ Transform:
   m_GameObject: {fileID: 8002610545879144605}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.163, y: -0.843, z: 0.069}
-  m_LocalScale: {x: 0.13, y: 0.13, z: 0.13}
+  m_LocalScale: {x: 59.090897, y: 59.090904, z: 59.090904}
   m_Children:
   - {fileID: 5089853572698117648}
   - {fileID: 7787127171578862016}
@@ -4407,6 +4408,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1234953363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8002610545879144605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9969d88335ed9484ca77b2b328dc7d00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _slideController: {fileID: 0}
+  _nextSlide: {fileID: 0}
 --- !u!1 &8014803798527027012
 GameObject:
   m_ObjectHideFlags: 0
@@ -4507,7 +4522,7 @@ Transform:
   m_GameObject: {fileID: 8158965778412262682}
   m_LocalRotation: {x: 0.50470364, y: 0.5046069, z: 0.49535033, w: 0.49525174}
   m_LocalPosition: {x: -1.1609, y: -2.356977, z: 0.012473007}
-  m_LocalScale: {x: -0, y: -0, z: -1.1106001}
+  m_LocalScale: {x: -0.9999999, y: -0.9999999, z: -1.0000001}
   m_Children:
   - {fileID: 3393944651658827113}
   m_Father: {fileID: 8013343563647433220}
