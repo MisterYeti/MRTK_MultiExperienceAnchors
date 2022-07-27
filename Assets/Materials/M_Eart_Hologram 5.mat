@@ -120,12 +120,12 @@ Material:
     - _LightMapOperation: 0
     - _LightmapIntensity: 1
     - _MaterialType: 3
-    - _Metallic: 0.558
+    - _Metallic: 0.5
     - _Mode: 4
     - _NormalIntensity: 1
     - _NormalMapIntensity: 1
     - _NormalMode: 0
-    - _Opacity: 1
+    - _Opacity: 0.684
     - _Pause: 0
     - _PointLightsCount: 1
     - _Reflection: 0
@@ -178,7 +178,7 @@ Material:
     - __SLICEPLANE_ON: 0
     - __VERTEXDISPLACEMENT_ON: 0
     - __dirty: 0
-    - _emissive: 0
+    - _emissive: 0.5
     - _supportVFace: 0
     m_Colors:
     - _AmbientColor: {r: 0.2, g: 0.2, b: 0.25, a: 1}
@@ -186,7 +186,7 @@ Material:
     - _Color: {r: 1, g: 1, b: 1, a: 0.85882354}
     - _CustomFogColor: {r: 0, g: 0, b: 0, a: 1}
     - _Emission: {r: 0, g: 0, b: 0, a: 0}
-    - _FresnelColor: {r: 0.071956225, g: 0.18009539, b: 0.31132078, a: 0.5372549}
+    - _FresnelColor: {r: 0.071956225, g: 0.18009539, b: 0.31132078, a: 0.9764706}
     - _HighlightColor: {r: 1, g: 1, b: 1, a: 1}
     - _LambertLightDirection: {r: -1, g: -1, b: 1, a: 1}
     - _SlicePlaneEdgeColor: {r: 1, g: 1, b: 1, a: 0}

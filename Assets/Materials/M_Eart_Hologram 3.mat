@@ -111,7 +111,7 @@ Material:
     - _LightMapOperation: 0
     - _LightmapIntensity: 1
     - _MaterialType: 2
-    - _Metallic1: 0.522
+    - _Metallic1: 0.5
     - _Mode: 0
     - _NormalIntensity: 1
     - _NormalMapIntensity: 1
@@ -168,7 +168,7 @@ Material:
     - __SLICEPLANE_ON: 0
     - __VERTEXDISPLACEMENT_ON: 0
     - __dirty: 0
-    - _emissive: 0
+    - _emissive: 0.5
     - _supportVFace: 0
     m_Colors:
     - _AmbientColor: {r: 0.2, g: 0.2, b: 0.25, a: 1}

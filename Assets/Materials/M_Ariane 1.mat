@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: M_Ariane
+  m_Name: M_Ariane 1
   m_Shader: {fileID: 4800000, guid: dd10245fc9fd3674faeee9ec52975b3d, type: 3}
   m_ShaderKeywords: _ADVANCEDSECTION_ON _COLORSPACE_DEFAULT _COMMONSECTION_ON _FRESNELLIGHTOPERATION_ADDITIVE
     _FRESNELLIGHT_INVERSE _HIGHLIGHT_LERP _INDIRECT_CUSTOM _INVERSEMAP_NONE _LAMBERTSHADING_OFF
@@ -87,10 +87,10 @@ Material:
     - _Distortion: 0.3
     - _DstBlend: 0
     - _Exposure: 1
-    - _FresnalScale: 1.33
+    - _FresnalScale: 0
     - _FresnelLight: 2
     - _FresnelLightOperation: 2
-    - _FresnelPower: 1.16
+    - _FresnelPower: 3.87
     - _FresnelWidth: 0.67
     - _Halo: 1
     - _HaloIntensity: 1

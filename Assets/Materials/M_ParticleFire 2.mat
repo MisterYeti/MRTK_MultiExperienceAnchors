@@ -160,7 +160,7 @@ Material:
     - _supportVFace: 0
     m_Colors:
     - _AmbientColor: {r: 0.2, g: 0.2, b: 0.25, a: 1}
-    - _Color: {r: 1, g: 0.48717922, b: 0, a: 0.23529412}
+    - _Color: {r: 1, g: 0.6024929, b: 0, a: 0.23529412}
     - _CustomFogColor: {r: 0, g: 0, b: 0, a: 1}
     - _Emission: {r: 3.3882353, g: 3.3882353, b: 3.3882353, a: 0}
     - _FresnelColor: {r: 0.54, g: 0.5805269, b: 0.6, a: 0.5372549}

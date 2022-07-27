@@ -87,7 +87,7 @@ Material:
     - _Distortion: 0.3
     - _DstBlend: 0
     - _Exposure: 1
-    - _FresnalScale: 1.33
+    - _FresnalScale: 0.4
     - _FresnelLight: 2
     - _FresnelLightOperation: 2
     - _FresnelPower: 1.16

@@ -115,7 +115,7 @@ Material:
     - _NormalIntensity: 1
     - _NormalMapIntensity: 1
     - _NormalMode: 0
-    - _Opacity: 0.19
+    - _Opacity: 0.15
     - _Pause: 0
     - _PointLightsCount: 1
     - _Reflection: 2
