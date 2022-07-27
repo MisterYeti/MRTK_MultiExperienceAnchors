@@ -34987,7 +34987,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 449bd9c59d0f7d54fb1fcb72e7221120, type: 2}
+  - {fileID: 2100000, guid: de54052ddd17e484d81b6f05780a6092, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -35102,6 +35102,7 @@ GameObject:
   - component: {fileID: 2127044694889451977}
   - component: {fileID: 8497304523775764144}
   - component: {fileID: 393751487}
+  - component: {fileID: 2039532367871995777}
   m_Layer: 0
   m_Name: Lancement
   m_TagString: Untagged
@@ -35148,6 +35149,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &393751487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4278077820891730514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9969d88335ed9484ca77b2b328dc7d00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _slideController: {fileID: 0}
+  _nextSlide: {fileID: 0}
+--- !u!114 &2039532367871995777
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -40078,7 +40093,7 @@ Transform:
   m_GameObject: {fileID: 4562276702449095597}
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: -0.648, z: -1}
-  m_LocalScale: {x: 454.54547, y: 454.54544, z: 454.54547}
+  m_LocalScale: {x: 454.5455, y: 454.5454, z: 454.54547}
   m_Children:
   - {fileID: 2127044694889451977}
   - {fileID: 539523541248319423}
@@ -45386,7 +45401,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 449bd9c59d0f7d54fb1fcb72e7221120, type: 2}
+  - {fileID: 2100000, guid: de54052ddd17e484d81b6f05780a6092, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

@@ -87,10 +87,10 @@ Material:
     - _Distortion: 0.3
     - _DstBlend: 0
     - _Exposure: 0.55
-    - _FresnalScale: 1
+    - _FresnalScale: 0
     - _FresnelLight: 1
     - _FresnelLightOperation: 0
-    - _FresnelPower: 1
+    - _FresnelPower: 2.49
     - _FresnelWidth: 3.33
     - _Halo: 1
     - _HaloIntensity: 1
@@ -111,7 +111,7 @@ Material:
     - _LightMapOperation: 0
     - _LightmapIntensity: 1
     - _MaterialType: 4
-    - _Metallic1: 0.904
+    - _Metallic1: 0.613
     - _Mode: 0
     - _NormalIntensity: 1
     - _NormalMapIntensity: 1
@@ -172,7 +172,7 @@ Material:
     - _supportVFace: 0
     m_Colors:
     - _AmbientColor: {r: 0.31861874, g: 0.31861874, b: 0.3773585, a: 1}
-    - _BaseColor: {r: 0.92941177, g: 0.9607843, b: 1, a: 0}
+    - _BaseColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 0}
     - _Color: {r: 0.9292453, g: 0.9589166, b: 1, a: 1}
     - _CustomFogColor: {r: 0, g: 0, b: 0, a: 1}
     - _Emission: {r: 0, g: 0, b: 0, a: 0}

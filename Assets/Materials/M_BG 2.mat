@@ -86,10 +86,10 @@ Material:
     - _Distortion: 0.3
     - _DstBlend: 0
     - _Exposure: 1
-    - _FresnalScale: 1
+    - _FresnalScale: 0
     - _FresnelLight: 2
     - _FresnelLightOperation: 2
-    - _FresnelPower: 1
+    - _FresnelPower: 3.51
     - _FresnelWidth: 0.7
     - _Halo: 1
     - _HaloIntensity: 1
@@ -167,15 +167,15 @@ Material:
     - __SLICEPLANE_ON: 0
     - __VERTEXDISPLACEMENT_ON: 0
     - __dirty: 0
-    - _emissive: 0
+    - _emissive: 1
     - _supportVFace: 0
     m_Colors:
     - _AmbientColor: {r: 0.2, g: 0.2, b: 0.25, a: 1}
-    - _BaseColor: {r: 0.2735849, g: 0.25151557, b: 0.2232556, a: 0}
+    - _BaseColor: {r: 0.3490566, g: 0.3490566, b: 0.3490566, a: 0}
     - _Color: {r: 0.4528302, g: 0.4528302, b: 0.4528302, a: 1}
     - _CustomFogColor: {r: 0, g: 0, b: 0, a: 1}
     - _Emission: {r: 0, g: 0, b: 0, a: 0}
-    - _FresnelColor: {r: 0.48215556, g: 0.50551796, b: 0.5188679, a: 1}
+    - _FresnelColor: {r: 1, g: 1, b: 1, a: 1}
     - _HighlightColor: {r: 1, g: 1, b: 1, a: 1}
     - _LambertLightDirection: {r: 25, g: 45, b: 0, a: 1}
     - _SlicePlaneEdgeColor: {r: 1, g: 1, b: 1, a: 0}
